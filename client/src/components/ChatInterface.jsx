@@ -43,7 +43,7 @@ const ChatInterface = () => {
     try {
       // For demo purposes, we'll use the explain-concept endpoint
       // In a real implementation, you'd have a dedicated chat endpoint
-      const response = await axios.post('/api/explain-concept', {
+      const response = await axios.post('https://chat-bot-dsa.onrender.com/api/explain-concept', {
         concept: userMessage.content,
         level: 'intermediate'
       })

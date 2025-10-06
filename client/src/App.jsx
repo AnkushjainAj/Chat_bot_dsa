@@ -126,7 +126,7 @@ function LearnSection() {
 
     setLoading(true)
     try {
-      const response = await axios.post('/api/explain-concept', {
+      const response = await axios.post('https://chat-bot-dsa.onrender.com/api/explain-concept', {
         concept: concept.trim(),
         level
       })
